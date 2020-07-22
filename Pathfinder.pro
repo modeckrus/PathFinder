@@ -14,7 +14,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        src/cpp/main.cpp
+        src/cpp/main.cpp \
+        src/cpp/PathfinderApp/PathfinderApp.cpp 
+
+HEADERS += \
+        src/cpp/PathfinderApp/PathfinderApp.h 
 
 RESOURCES += src/qml/qml.qrc
 
