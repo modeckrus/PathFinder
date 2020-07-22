@@ -9,6 +9,10 @@ Window {
     width: 640
     height: 480
     title: qsTr("PathFinder")
+    
+    // all flags must be set at once! Check docs for
+    // al the possibilities, some of them interesting 
+    // flags: Qt.WindowStaysOnTopHint	
 
     MainWindow {
         anchors.centerIn: parent
