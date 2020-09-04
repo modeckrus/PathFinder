@@ -35,3 +35,13 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+# or-tools stuff
+
+INCLUDEPATH += $$PWD/or-tools/
+INCLUDEPATH += $$PWD/or-tools/build/_deps/absl-src/
+
+LIBS += -L$$PWD/or-tools/build/lib/ -lortools
+
+INCLUDEPATH += $$PWD/or-tools/build
+DEPENDPATH += $$PWD/or-tools/build
