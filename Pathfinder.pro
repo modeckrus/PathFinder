@@ -15,7 +15,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         src/cpp/main.cpp \
-        src/cpp/PathfinderApp/PathfinderApp.cpp 
+        src/cpp/PathfinderApp/PathfinderApp.cpp  \
+        src/cpp/example/assignment_mip.cpp
+
 
 HEADERS += \
         src/cpp/PathfinderApp/PathfinderApp.h 
@@ -38,10 +40,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 # or-tools stuff
 
-INCLUDEPATH += $$PWD/or-tools/
-INCLUDEPATH += $$PWD/or-tools/build/_deps/absl-src/
+ORTOOLS_PATH = /home/modeck/Documents/cpp/qt/PathFinder/or-tools/
 
-LIBS += -L$$PWD/or-tools/build/lib/ -lortools
+INCLUDEPATH += $${ORTOOLS_PATH}/include
+LIBS += -L$${ORTOOLS_PATH}/lib -lCbc -lglog -lgflags -lCbcSolver -lCbc -lOsiCbc -lCgl -lClpSolver -lClp -lOsiClp -lOsi -lCoinUtils -lortools -lz -lrt -lpthread
 
-INCLUDEPATH += $$PWD/or-tools/build
-DEPENDPATH += $$PWD/or-tools/build

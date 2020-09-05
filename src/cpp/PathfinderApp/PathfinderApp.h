@@ -4,7 +4,6 @@
 #include <QTimer>
 #include <QQmlApplicationEngine>
 #include <QElapsedTimer>
-#include <ortools>
 
 // #include "MAVLinkProtocol.h"
 
