@@ -1,4 +1,7 @@
-In order for everything to work. You need to download the finished version from here.
+In order for everything to work. 
+You can use my version of or-tools
+or 
+You need to download the finished version from here.
 https://developers.google.com/optimization/install/cpp/linux
 run shell: 
     cd or-tools
